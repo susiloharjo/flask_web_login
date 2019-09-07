@@ -1,4 +1,5 @@
 from flask_wtf import FlaskForm
+from flask_material import Material  
 from wtforms import StringField, PasswordField, SubmitField
 
 class LoginForm(FlaskForm):

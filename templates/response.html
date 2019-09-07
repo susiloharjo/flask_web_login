@@ -1,13 +1,32 @@
 <html>
 <head>
 	<title>Test Web</title>	
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>	
 
 <body>
+		<nav>
+				<div class="navbar-fixed">
+				  <a href="#" class="brand-logo right">Logo</a>
+				  <ul id="nav-mobile" class="left hide-on-med-and-down">
+					<li><a href="/">Home</a></li>
+					<li><a href="badges.html">Components</a></li>
+					<li><a href="collapsible.html">JavaScript</a></li>
+				  </ul>
+				</div>
+			  </nav>
+	<div class="container">
 
-	<h2>Demo Form </h2>
 
-	<strong> {{ form.namaUser }}	</strong>
+
+	<h1><strong> Hello, {{ namaUser }}	</strong></h1>
+
+</div>
 
 
 </body>	
