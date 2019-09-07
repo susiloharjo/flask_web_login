@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title>Test Web</title>	
+</head>	
+
+<body>
+
+	<h2>Demo Form </h2>
+
+	{% if pesan %}
+		<p style="color:red">{{ pesan }}</p>
+	{% endif %}
+
+	<form method="post">
+		{{ form.namaUser.label }} {{ form.namaUser() }} <br>
+		{{ form.kataSandi.label }} {{ form.kataSandi() }} <br>
+		<p> {{ form.submit() }} </p>
+
+	</form>	
+
+</body>	
+</html>	
